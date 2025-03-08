@@ -1,43 +1,45 @@
 body {
-    font-family: Roboto;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the content horizontally */
-  }
+  font-family: Roboto;
+  margin: 0;
+  min-height: 100vh; /* Changed from height to min-height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  min-width: 1000px; /* Add a minimum width to prevent content from wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling when window is smaller than min-width */
+}
 
-  .content-wrapper {
-    max-width: 1200px; /* Adjust this value based on your preference */
-    width: 100%; /* Takes full width up to the max-width */
-  }
-  
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  min-width: 1000px; /* Match the body min-width */
+}
 
-  .header, .container-one {
-    padding-left: 10%; /* Adjust percentage as needed */
-    padding-right: 10%; /* Adjust percentage as needed */
-    background-color: #1f2937;
-    width: 100%;
-    box-sizing: border-box; /* Makes sure padding is included in width */
-  }
+.header, .container-one {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #1f2937;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 100px;
+  margin: 0;
+  background-color: #1f2937;
+}
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 100px;
-    margin: 0;
-    background-color: #1f2937;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 16px;
-  }
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  flex-shrink: 0; /* Prevent list items from shrinking */
+}
 
   a {
     text-decoration: none;
@@ -135,13 +137,15 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
   margin-bottom: 8px;
+  flex-wrap: nowrap; /* Prevent wrapping of boxes */
+  min-width: 800px; /* Ensure minimum width for all four boxes */
 }
 
 .box-item {
   width: 180px;
   text-align: center;
+  flex-shrink: 0; /* Prevent box items from shrinking */
 }
 
 .box {
