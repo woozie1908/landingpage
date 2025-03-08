@@ -112,17 +112,94 @@ body {
 .container-two {
   padding-left: 10%; /* Adjust percentage as needed */
   padding-right: 10%; /* Adjust percentage as needed */
-  background-color: white
+  background-color: white;
   width: 100%;
   box-sizing: border-box; /* Makes sure padding is included in width */
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 100px;
 }
 
 .header3 {
   font-size: 36px;
   color: #1f2937;
   font-weight: 900;
-  margin-bottom: 8px;
-  margin-top: 28px;
+  margin-bottom: 36px;
+  margin-top: 36px;
   display: flex;
   justify-content: center;
+
+}
+
+.boxes-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.box-item {
+  width: 180px;
+  text-align: center;
+}
+
+.box {
+  width: 160px;
+  height: 160px;
+  border: 4px solid #3882F6;
+  border-radius: 12px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+
+.box-text {
+  color: #1f2937;
+  font-size: 18px;
+  margin-top: 8px;
+  max-width: 160px;
+  margin-bottom: 8px;
+}
+
+.container-three {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  text-align: start; /* Ensure text is centered */
+  background-color: #e5e7eb;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  max-width: 800px; /* Control the width of the text */
+  margin-bottom: 20px;
+}
+
+.author-tag {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  max-width: 800px; /* Control the width of the text */
+  text-align: end;
+}
+
+.container-four {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center content vertically */
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  background-color: white;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
