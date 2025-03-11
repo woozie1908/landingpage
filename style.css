@@ -15,7 +15,7 @@ body {
   min-width: 1000px; /* Match the body min-width */
 }
 
-.header, .container-one {
+.header, .footer, .container-one {
   padding-left: 10%;
   padding-right: 10%;
   background-color: #1f2937;
@@ -27,10 +27,21 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 16px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   margin: 0;
-  background-color: #1f2937;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-content: center;
+}
+
 
 ul {
   display: flex;
@@ -137,7 +148,6 @@ ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 8px;
   flex-wrap: nowrap; /* Prevent wrapping of boxes */
   min-width: 800px; /* Ensure minimum width for all four boxes */
 }
@@ -160,9 +170,7 @@ ul {
 .box-text {
   color: #1f2937;
   font-size: 18px;
-  margin-top: 8px;
   max-width: 160px;
-  margin-bottom: 8px;
 }
 
 .container-three {
@@ -175,8 +183,8 @@ ul {
   box-sizing: border-box;
   text-align: start; /* Ensure text is centered */
   background-color: #e5e7eb;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .text {
@@ -184,7 +192,6 @@ ul {
   font-style: italic;
   font-weight: 300;
   max-width: 800px; /* Control the width of the text */
-  margin-bottom: 20px;
 }
 
 .author-tag {
@@ -197,13 +204,44 @@ ul {
 
 .container-four {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center content vertically */
-  width: 100%;
   padding-left: 10%;
   padding-right: 10%;
   box-sizing: border-box;
   background-color: white;
   padding-bottom: 100px;
   padding-top: 100px;
+  justify-content: center;
+  height: 100mv;
+}
+
+.blue-box {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #3882F6;
+  border: none;
+  font-size: 18px;
+  color: white;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+  padding: 36px;
+}
+
+.blue-title {
+font-size: 24px;
+color: #F9FAF8;
+font-weight: bold;
+}
+
+.sign-up2 {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3882F6;
+  color: white;
+  padding: 10px 40px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
 }
